@@ -1,23 +1,56 @@
+body {
+  /* background-color: #000; */
+  background-image: url("https://images5.alphacoders.com/359/359173.jpg");
+  justify-content: center;
+}
+
+.container-fluid {
+  background-color: rgba(119, 123, 150, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vh;
+  border-radius: 30px;
+  padding: 3vh;
+}
+.header {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 10vh;
+  text-align: center;
+  margin-top: 3vh;
+  color: antiquewhite;
+  border-radius: 15px;
+  width: 100vh;
+}
 .filters {
-  background: white;
+  background: rgba(119, 123, 150, 0.8);
   width: 100%;
+  padding: 2vh;
+  border-radius: 15px;
 }
 .filters li {
   display: inline-block;
   max-width: 80px;
   padding: 3px;
 }
-.filters li label {
+.filters label {
   display: block;
   font-size: 12px;
   font-weight: 900;
 }
-.filters li input {
+.filters input {
   width: 100%;
 }
-.filters li select {
+.filters select {
   width: 100%;
 }
+#widget_content {
+  margin-top: 12vh;
+}
+
 .widget {
   position: relative;
   width: 300px;
