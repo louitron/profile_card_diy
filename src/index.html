@@ -15,84 +15,96 @@
 
   <body>
     <div class="header">
-      <h1>PROFILE CARD MAKER</h1>
+      <h1 class="h1">PROFILE CARD MAKER</h1>
     </div>
-    <div class="container-fluid row justify-content-center">
-      <div class="col-3">
-        <form class="filters">
-          <label class="form-label">Include Cover</label>
-          <select class="picker form-select" for="includeCover">
-            <option value="">Include Cover</option>
-            <option value="true">True</option>
-            <option value="false">False</option>
-          </select>
+    <div class="container row justify-content-center">
+      <form class="filters col-6 mt-4">
+        <div class="row">
+          <div class="col-3">
+            <label class="form-label">Include Cover</label>
+            <select class="picker form-select" for="includeCover">
+              <option value="">Include Cover</option>
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
 
-          <label class="form-label">Upload Background Picture</label>
-          <input
-            class="form-control"
-            type="file"
-            id="cover_input"
-            accept="image/png, image/jpg"
-          />
+            <label class="form-label">Upload Background Picture</label>
+            <input
+              class="form-control"
+              type="file"
+              id="cover_input"
+              accept="image/png, image/jpg"
+            />
+          </div>
+          <div class="col-3">
+            <label class="form-label">Name</label>
+            <input class="form-control picker" for="name" type="text" />
+            <label class="form-label">Upload Profile Picture</label>
+            <input
+              class="form-control"
+              type="file"
+              id="avatar"
+              accept="image/png, image/jpg"
+            />
+          </div>
+          <div class="col-3">
+            <label class="form-label">Last Name</label>
+            <input class="form-control picker" for="lastname" type="text" />
 
-          <label class="form-label">Upload Profile Picture</label>
-          <input
-            class="form-control"
-            type="file"
-            id="avatar"
-            accept="image/png, image/jpg"
-          />
+            <label class="form-label">S.M. Position</label>
+            <select class="picker form-select" for="socialMediaPosition">
+              <option value="position-left">Left</option>
+              <option value="position-right">Right</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <label class="form-label">Twitter</label>
+            <input class="form-control picker" for="twitter" type="text" />
+            <label class="form-label">Role</label>
+            <input class="form-control picker" for="role" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <label class="form-label">Github</label>
+            <input class="form-control picker" for="github" type="text" />
 
-          <label class="form-label">Name</label>
-          <input class="form-control picker" for="name" type="text" />
+            <label class="form-label">LinkedIn</label>
+            <input class="form-control picker" for="linkedin" type="text" />
+          </div>
+          <div class="col-3">
+            <label class="form-label">Instagram</label>
+            <input class="form-control picker" for="instagram" type="text" />
 
-          <label class="form-label">Last Name</label>
-          <input class="form-control picker" for="lastname" type="text" />
-
-          <label class="form-label">S.M. Position</label>
-          <select class="picker form-select" for="socialMediaPosition">
-            <option value="position-left">Left</option>
-            <option value="position-right">Right</option>
-          </select>
-
-          <label class="form-label">Twitter</label>
-          <input class="form-control picker" for="twitter" type="text" />
-
-          <label class="form-label">Github</label>
-          <input class="form-control picker" for="github" type="text" />
-
-          <label class="form-label">LinkedIn</label>
-          <input class="form-control picker" for="linkedin" type="text" />
-
-          <label class="form-label">Instagram</label>
-          <input class="form-control picker" for="instagram" type="text" />
-
-          <label class="form-label">Role</label>
-          <input class="form-control picker" for="role" type="text" />
-
-          <label class="form-label">City</label>
-          <select class="picker form-select" for="city">
-            <option value="">null</option>
-            <option value="Miami">Miami</option>
-            <option value="Munich">Munich</option>
-            <option value="Caracas">Caracas</option>
-            <option value="Toronto">Toronto</option>
-          </select>
-
-          <label class="form-label">Country</label>
-          <select class="picker form-select" for="country">
-            <option value="">null</option>
-            <option value="USA">USA</option>
-            <option value="Germany">Germany</option>
-            <option value="Canada">Canada</option>
-            <option value="Venezuela">Venezuela</option>
-          </select>
-        </form>
-      </div>
-      <div class="col-5">
+            <label class="form-label">City</label>
+            <select class="picker form-select" for="city">
+              <option value="">null</option>
+              <option value="Miami">Miami</option>
+              <option value="Munich">Munich</option>
+              <option value="Caracas">Caracas</option>
+              <option value="Toronto">Toronto</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <label class="form-label">Country</label>
+            <select class="picker form-select" for="country">
+              <option value="">null</option>
+              <option value="USA">USA</option>
+              <option value="Germany">Germany</option>
+              <option value="Canada">Canada</option>
+              <option value="Venezuela">Venezuela</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <!-- <div class="col-3">
         <div id="widget_content"></div>
-      </div>
+      </div> -->
     </div>
+    <div>
+      <div id="widget_content"></div>
+    
+
     <script
       src="https://kit.fontawesome.com/77358afe30.js"
       crossorigin="anonymous"

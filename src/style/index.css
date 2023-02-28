@@ -2,18 +2,18 @@ body {
   /* background-color: #000; */
   background-image: url("https://images5.alphacoders.com/359/359173.jpg");
   justify-content: center;
+  width: 140vh;
+}
+.container {
+  margin-top: 30px;
+  position: absolute;
+  /* top: 10%; */
+  left: 10vh;
+  /* transform: translate(-50%, -50%); */
+  width: 100vh;
+  top: 10%;
 }
 
-.container-fluid {
-  background-color: rgba(119, 123, 150, 0.3);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vh;
-  border-radius: 30px;
-  padding: 3vh;
-}
 .header {
   position: absolute;
   left: 50%;
@@ -23,7 +23,7 @@ body {
   margin-top: 3vh;
   color: antiquewhite;
   border-radius: 15px;
-  width: 100vh;
+  width: 50%;
 }
 .filters {
   background: rgba(119, 123, 150, 0.8);
@@ -48,17 +48,20 @@ body {
   width: 100%;
 }
 #widget_content {
-  margin-top: 12vh;
+  width: 50vh;
+  left: 50%;
 }
 
 .widget {
-  position: relative;
+  position: absolute;
   width: 300px;
   height: 350px;
-  margin: 50px auto;
+  margin: 50px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  left: 120vh;
+  top: 10%;
 }
 .widget .cover {
   height: 160px;
@@ -79,6 +82,7 @@ body {
   margin: 0 0 0 -55px;
   border: 5px solid #fff;
   border-radius: 50%;
+  object-fit: contain;
 }
 .widget h1,
 .widget h2,
